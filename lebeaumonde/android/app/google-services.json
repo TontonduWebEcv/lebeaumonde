@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575035757817",
+    "project_id": "lebeaumonde-ba7da",
+    "storage_bucket": "lebeaumonde-ba7da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575035757817:android:2598a7e8753ceaafb5be28",
+        "android_client_info": {
+          "package_name": "com.example.lebeaumonde"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575035757817-e2jm1amaj09ce9cc0pqghm93o8ull0eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzM28AE3qm3NFZ54ViHcrPMF6jgT2VxRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575035757817-e2jm1amaj09ce9cc0pqghm93o8ull0eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
