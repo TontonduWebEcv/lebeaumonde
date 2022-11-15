@@ -54,8 +54,9 @@ class _CreateAccountState extends State<CreateAccount> {
                   password: _passwordController.text,
                 );
                 if (message!.contains('Success')) {
-                  Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => const Home()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (context) =>
+                          Home(email: _emailController.text)));
                 }
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
