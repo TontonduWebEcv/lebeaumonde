@@ -29,6 +29,13 @@
             {
               "client_id": "575035757817-e2jm1amaj09ce9cc0pqghm93o8ull0eb.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "575035757817-jbt4pc84nkip1qnrq7cp8bvsm6l7ca53.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.lebeaumonde"
+              }
             }
           ]
         }
