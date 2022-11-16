@@ -6,7 +6,7 @@ class CreateAccount extends StatefulWidget {
   const CreateAccount({Key? key}) : super(key: key);
 
   @override
-  _CreateAccountState createState() => _CreateAccountState();
+  State<CreateAccount> createState() => _CreateAccountState();
 }
 
 class _CreateAccountState extends State<CreateAccount> {
@@ -54,10 +54,12 @@ class _CreateAccountState extends State<CreateAccount> {
                   password: _passwordController.text,
                 );
                 if (message!.contains('Success')) {
+                  if (!mounted) return;
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
                       builder: (context) =>
                           Home(email: _emailController.text)));
                 }
+                if (!mounted) return;
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(message),

@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:lebeaumonde/home/screens/home.dart';
 import 'package:lebeaumonde/login.dart';
 
 void main() async {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'lebeaumonde',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -26,9 +27,11 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: LoginScreen(),
+      home: const Home(
+        email: 'toto@gmail.com',
+      ),
     );
   }
 }

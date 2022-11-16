@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,6 +9,24 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    getAssociations();
+    super.initState();
+  }
+
+  Future<dynamic> getAssociations() async {
+    final db = FirebaseFirestore.instance;
+    print(db);
+    final results = await db.collection("association").get().then((event) {
+      for (var doc in event.docs) {
+        print("${doc.id} => ${doc.data()}");
+      }
+    });
+    return results;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
