@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
         title: const Text('Home'),
       ),
       body: const Center(
-        child: Text('Welcome !'),
+        child: Text('Hello !'),
       ),
     );
   }
